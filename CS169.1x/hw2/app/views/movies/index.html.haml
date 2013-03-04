@@ -1,0 +1,36 @@
+-#  This file is app/views/movies/index.html.haml
+%h1 All Movies
+
+= form_tag movies_path, :id => 'ratings_form', :method => :get do
+  Include:  
+  = hidden_field_tag :s, session[:s]
+  - @all_ratings.each do |rating|
+    = rating
+    - if session[:ratings]
+      = check_box_tag "ratings[#{rating}]", 1, session[:ratings][rating], :id => "ratings_#{rating}"
+    - else
+      = check_box_tag "ratings[#{rating}]", 1, true, :id => "ratings_#{rating}"
+  = submit_tag 'Refresh', :id => 'ratings_submit'
+
+%table#movies
+  %thead
+    %tr
+      - if session[:s] == 't'
+        %th.hilite= link_to 'Movie Title', movies_path(:s=>'t', :ratings => session[:ratings]), :id => 'title_header'
+      - else
+        %th= link_to 'Movie Title', movies_path(:s=>'t', :ratings => session[:ratings]), :id => 'title_header'
+      %th Rating 
+      - if session[:s] == 'd'
+        %th.hilite= link_to 'Release Date', movies_path(:s=>'d', :ratings => session[:ratings]), :id => 'release_date_header'
+      - else
+        %th= link_to 'Release Date', movies_path(:s=>'d', :ratings => session[:ratings]), :id => 'release_date_header'
+      %th More Info
+  %tbody
+    - @movies.each do |movie|
+      %tr
+        %td= movie.title 
+        %td= movie.rating
+        %td= movie.release_date
+        %td= link_to "More about #{movie.title}", movie_path(movie)
+
+= link_to 'Add new movie', new_movie_path
