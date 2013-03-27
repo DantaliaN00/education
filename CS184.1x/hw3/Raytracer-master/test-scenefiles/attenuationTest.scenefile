@@ -1,0 +1,16 @@
+
+size 600 600
+
+
+
+camera 0 9.0 0.0   0 0 0    0 0 1  45
+
+
+
+sphere 0 0 0 1.0
+
+point -4 4 0 1.0 0 0 
+#point -9 9 0 1.0 0 0 
+attenuation 0 0 0.2
+specular .2 .2 .2
+

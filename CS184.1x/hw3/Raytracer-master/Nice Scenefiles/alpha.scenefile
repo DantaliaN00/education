@@ -1,0 +1,43 @@
+
+size 500 500
+maxdepth 6
+output alphaExample.jpg
+
+camera 0 5 0  0 0 0   0 0 1  65
+
+directional 0 0 -1 0.0 0.3 1.0
+
+#point 1 2 0.3 1.0 0.0 0.0
+
+
+
+sphere 0 0 0 1
+
+vertex 0 1.2 0 
+vertex -0.5 1.2 0
+vertex -0.5 1.2 1
+
+emission 0 1.0 1.0
+tri 0 1 2
+
+emission 0 0 0
+alpha 0.60
+sphere 0 2 0 0.3
+
+
+alpha 0.60
+
+vertex 2 0 2
+vertex 2 0 1
+vertex 1 0 1
+
+tri 3 4 5
+
+alpha 1.0
+emission 0 0 1
+vertex 2 -0.2 2
+vertex 2 -0.2 1
+vertex 1 -0.2 1
+
+tri 6 7 8
+

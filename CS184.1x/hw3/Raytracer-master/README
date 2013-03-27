@@ -1,0 +1,30 @@
+Website: http://inst.eecs.berkeley.edu/~cs184-dg/hw5.html
+NOTE: the full writup is on the website.
+
+Our raytracer currently correctly generates rays for perspective view,
+and renders shapes with Blinn-Phong Shading, reflections and shadows
+as described in the assignment specification. Use make to build the 
+raytracer. A sample of how to run it is "./raytracer -r test1.scenefile"
+
+The command line flags -a -b -c and -e disable specular, diffuse,
+emissive and ambient terms, respectively. Any or all of these flags
+may be combined.
+
+For triangles and trinorms, we apply transformations when the shape is
+defined rather than when the verticies comprising it are defined.
+
+Reflection is disabled by default; pass the -r flag into the
+program to enable reflection. Reflections by and on both spheres
+and triangles is supported.
+
+Shadowing is supported, again on both spheres and triangles
+
+There is no acceleration structure. Everything else is implemented.
+
+
+Additional Features:
+
+-we have implemented a new keyword bkgcolor r g b,
+which sets the color of a ray that does not hit
+any objects to whatever color is specified
+

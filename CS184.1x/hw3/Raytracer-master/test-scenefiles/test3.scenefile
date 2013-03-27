@@ -1,0 +1,24 @@
+
+#multiple spheres, one light
+
+size 500 500
+maxdepth 6 
+output image.tga
+
+maxvertnorms 200
+maxverts 200
+
+camera 0 -3 0 0 0 0 0 0 1 70 
+
+point 0 0 0 1.0 1.0 1.0
+
+ambient 0.4 0.4 0.4
+
+sphere -1.0 0.0 0.0 0.5
+diffuse 1.0 0.0 0.0
+specular 0.2 0.2 0.2
+
+
+sphere  1.0 0.0 0.0 0.5
+diffuse 0.0 0.0 1.0
+specular 0.2 0.2 0.2

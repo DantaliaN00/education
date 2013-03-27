@@ -1,0 +1,26 @@
+
+size 800 600
+maxdepth 10
+
+camera 1.4 1.0 1.8   0 1 0.0     0 1 0 45
+
+bkgcolor 0 0 0
+
+
+#large sphere
+sphere 0 0 0 1.0
+diffuse 0.0 0.4 1.0
+specular 1.0 1.0 1.0
+
+sphere 0 1.2 0 0.18
+diffuse 1 0 0
+specular 1.0 1.0 1.0
+shininess 20.0
+
+sphere -1 1.2 0 0.18
+diffuse 0 0 1
+specular 1.0 1.0 1.0
+shininess 20.0
+
+
+point 3.0 3.0 1.0 1.0 1.0 1.0 

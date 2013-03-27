@@ -1,0 +1,22 @@
+
+size 300 300
+
+#uncomment one or the other and we can see
+#that shadowing works properly
+camera 3.7 -1.4 0  0 0 0  0 0 1 45
+#camera 3.7 +1.4 0  0 0 0  0 0 1 45
+
+point 0 0 0 1.0 0 0 
+
+#two spheres at 1 and -1 in the y
+sphere 0 1 0 0.3
+diffuse 1 1 1
+
+sphere 0 -1 0 0.3
+diffuse 1 1 1
+
+
+#one small sphere between them, on one side of the origin
+
+sphere 0 0.5 0 0.05
+diffuse 1 1 1

@@ -1,0 +1,6 @@
+
+*.swp
+*.o
+raytracer
+CImg-1.4.9
+image.tga

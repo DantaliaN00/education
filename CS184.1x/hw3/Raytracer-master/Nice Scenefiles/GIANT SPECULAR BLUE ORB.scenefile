@@ -1,0 +1,21 @@
+#this is just one sphere at the very center with
+#one light on the side
+size 900 900
+maxdepth 6 
+output image.tga
+
+maxvertnorms 200
+maxverts 200
+
+camera -1.7 4.0 0 0 0 0 0 0 1 45
+
+#light off to the left of the sphere
+point 0.0 3.0 0.0 1.0 1.0 1.0 
+
+ambient 0.2 0.2 0.2
+
+diffuse 0.3 0.3 0.9
+specular 0.4 0.4 0.9
+shininess 109.0
+sphere 0 0.0 0.0 1.0
+

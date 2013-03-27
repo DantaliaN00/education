@@ -1,0 +1,22 @@
+#this is one sphere at the very center with
+#lights on both sides
+size 300 300
+maxdepth 6 
+output image.tga
+
+maxvertnorms 200
+maxverts 200
+
+camera 0 -4 0 0 0 0 0 0 1 45
+
+#lights on both sides
+point -3 0 0 1.0 1.0 1.0 
+point  3 0 0 1.0 0.0 0.0 
+
+ambient 0.3 0.3 0.3
+
+sphere 0 0.0 0.0 0.5
+diffuse 0.3 0.0 0.9
+specular 0.9 0.35 0.0
+shininess 0.5
+

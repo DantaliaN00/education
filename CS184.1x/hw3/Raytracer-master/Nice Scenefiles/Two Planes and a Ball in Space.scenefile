@@ -1,0 +1,39 @@
+
+
+size 400 400
+maxdepth 5
+
+camera 2.4 1.5 0   0 0 0    0 0 1 45
+
+maxverts 200
+
+#flat plane in the scene
+
+vertex 1 0 1 
+vertex 1 0 -1 
+vertex -1 0 -1 
+vertex -1 0 1 
+
+specular 0 0 1
+diffuse 0 0 0.3
+shininess 55
+#main quad
+tri 0 1 2
+tri 3 0 2
+
+
+#directional 0.0 -3.9 0 0.0 0.4 0.0
+point 0.0 3.9 0 1.0 1.0 1.0
+
+sphere 0 0.8 0 0.04
+
+
+#small triangle intended to shadow the large quad
+
+vertex 0.2 0.5 0.1
+vertex 0.2 0.5 -0.1
+vertex -0.2 0.5 -0.1
+
+emission 1.0 0 0
+tri 4 5 6
+

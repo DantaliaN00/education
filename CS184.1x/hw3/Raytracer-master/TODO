@@ -1,0 +1,46 @@
+
+1. FIX THE MAJOR DISTORTION PROBLEM
+WHEN IMAGE DIMENSIONS ARENT EQUAL
+
+
+
+Extra Credit
+
+
+
+
+Notes
+
+S (lightColor*specularMaterial*refl_ray) = basically reuse the specular parameter
+
+Transformations -let's consider a sphere in object space
+-we transform it into world space with M
+
+M^-1 * ray gets the ray, and we get a t ultimately. then we use that t in the 
+untransformed ray
+
+normals: how do we convert normals back into worldspace?
+M-interves-transpose * normal to get to object space
+inverse, then transpose
+
+pixel-perfect doesn't matter
+
+
+
+Stuff for Hw6:
+
+-make emissive surfaces work like light sources
+
+-make emissive surfaces GLOW
+
+-add quads
+
+-actually do acceleration structures
+
+-parallelize!
+
+-interactivity! add the functionality to click on some pixel in the rendered image, and shoot a ray from that
+to some geometry object - also add the ability to add new geometry objects
+
+
+-edge detection plus antialiasing with http://www.hackification.com/2008/08/31/experiments-in-ray-tracing-part-8-anti-aliasing/

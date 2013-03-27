@@ -1,0 +1,18 @@
+
+size 300 300
+maxdepth 6 
+output image.tga
+
+
+camera 0 8 0  0 0 0   0 0 1 45
+
+
+sphere 0 0 0 1.0
+diffuse 1 1 1
+emission 0.2 0 0
+
+point -1.0 2.0 0.4 0.0 1.0 1.0
+
+sphere 1.0 1.0 2 0.1
+diffuse 1 1 1
+emission 0 0 1
